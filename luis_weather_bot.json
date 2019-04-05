@@ -1,0 +1,1309 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "Weather Bot",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "WeatherInCity"
+    },
+    {
+      "name": "WeatherInCityWithDate"
+    }
+  ],
+  "entities": [
+    {
+      "name": "CityName",
+      "roles": []
+    },
+    {
+      "name": "DateCalendar",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "how is the weather in barcelona on august 6 2019?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 22,
+          "endPos": 30
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 35,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in barcelona?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 22,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in buenos aires now?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 22,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in madrid?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 22,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in manila",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 22,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in manila at 04/04/2016",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 22,
+          "endPos": 27
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 32,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in manila last week",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 22,
+          "endPos": 27
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 29,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in manila tomorrow",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 22,
+          "endPos": 27
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 29,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in tokyo",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 22,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in tokyo at december 12, 2014",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 22,
+          "endPos": 26
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 31,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "how is the weather last january 12, 1990 like in barcelona?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 24,
+          "endPos": 39
+        },
+        {
+          "entity": "CityName",
+          "startPos": 49,
+          "endPos": 57
+        }
+      ]
+    },
+    {
+      "text": "how is the weather last november 12, 2018 in manila",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 24,
+          "endPos": 40
+        },
+        {
+          "entity": "CityName",
+          "startPos": 45,
+          "endPos": 50
+        }
+      ]
+    },
+    {
+      "text": "how is the weather like in barcelona?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 27,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "hows the weather in amsterdam last week",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 20,
+          "endPos": 28
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 30,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "hows the weather in manila last week",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in atlanta",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in atlanta next week",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 29
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 31,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in atlanta tomorrow",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 29
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 31,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in atlanta yesterday",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 29
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 31,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in barcelona",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in barcelona last november 6, 2018",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 31
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 38,
+          "endPos": 53
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in buenos aires",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in buenos aires last june 5, 2018",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 34
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 41,
+          "endPos": 52
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in buenos aires on february 7, 2019",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 34
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 39,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in caracas",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in caracas on february 12, 2019",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 29
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 34,
+          "endPos": 50
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in caracas yesterday",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 29
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 31,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in france seven years ago",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 28
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 30,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in london",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in manila six months ago",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 28
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 30,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in manila three weeks ago",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 28
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 30,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in paris",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in paris now",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in paris on september 11, 2019",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 32,
+          "endPos": 49
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in tokyo tomorrow",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 29,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather in warsaw",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "tell me the weather three weeks ago in manila",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 20,
+          "endPos": 34
+        },
+        {
+          "entity": "CityName",
+          "startPos": 39,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "tell me weather in manila in the next three weeks",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 19,
+          "endPos": 24
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 33,
+          "endPos": 48
+        }
+      ]
+    },
+    {
+      "text": "tell me weather in seoul in the next three months",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 19,
+          "endPos": 23
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 32,
+          "endPos": 48
+        }
+      ]
+    },
+    {
+      "text": "tomorrow what is the weather in dubai?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 0,
+          "endPos": 7
+        },
+        {
+          "entity": "CityName",
+          "startPos": 32,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "weahter in london",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "weather in amsterdam",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "weather in argentina",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "weather in athens",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "weather in barcelona",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "weather in buenos aires",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "weather in london",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "weather in london?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "weather in miami",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "weather in miami at january 14, 2018",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 15
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 20,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "weather in miami tomorrow",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 15
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 17,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "weather in new york",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "weather today in prague",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 8,
+          "endPos": 12
+        },
+        {
+          "entity": "CityName",
+          "startPos": 17,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "what is the weather forecast for amsterdam in the next 8 days",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 33,
+          "endPos": 41
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 50,
+          "endPos": 60
+        }
+      ]
+    },
+    {
+      "text": "what is the weather forecast for jakarta in the next 3 months?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 33,
+          "endPos": 39
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 48,
+          "endPos": 60
+        }
+      ]
+    },
+    {
+      "text": "what is the weather forecast for manila in the next 3 months?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 33,
+          "endPos": 38
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 47,
+          "endPos": 59
+        }
+      ]
+    },
+    {
+      "text": "what is the weather forecast for paris in the next 3 months?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 33,
+          "endPos": 37
+        },
+        {
+          "entity": "CityName",
+          "startPos": 42,
+          "endPos": 44
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 46,
+          "endPos": 58
+        }
+      ]
+    },
+    {
+      "text": "what is the weather forecast for seoul in the next 3 months?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 33,
+          "endPos": 37
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 46,
+          "endPos": 58
+        }
+      ]
+    },
+    {
+      "text": "what is the weather in bahia blanca?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "what is the weather in buenos aires?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "what is the weather in dubai tomorrow?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 29,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "what is the weather in dubai yesterday ?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 29,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "what is the weather in dubai?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "what is the weather in france?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "what is the weather in paris tomorrow?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 29,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "what is the weather in paris yesterday?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 29,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "what is the weather in paris?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 23,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "what is the weather today in paris",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 20,
+          "endPos": 24
+        },
+        {
+          "entity": "CityName",
+          "startPos": 29,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "what is the weather tomorrow in dubai?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 20,
+          "endPos": 27
+        },
+        {
+          "entity": "CityName",
+          "startPos": 32,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "what is the weather yesterday in paris?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 20,
+          "endPos": 28
+        },
+        {
+          "entity": "CityName",
+          "startPos": 33,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "whats is the weather in miami?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 24,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "whats the weather amsterdam in the next eight days",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 31,
+          "endPos": 33
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 35,
+          "endPos": 49
+        }
+      ]
+    },
+    {
+      "text": "whats the weather in dubai last week",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 21,
+          "endPos": 25
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 27,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "whats the weather in dubai next week",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 21,
+          "endPos": 25
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 27,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "whats the weather in madrid?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 21,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "whats the weather in milan next month",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 21,
+          "endPos": 25
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 27,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "whats the weather in milan next year",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 21,
+          "endPos": 25
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 27,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "whats the weather in paris next month",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 21,
+          "endPos": 25
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 27,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "whats the weather in seoul in the next two days",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 21,
+          "endPos": 25
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 34,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "whats the weather in thailand in the next seven days",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 21,
+          "endPos": 28
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 37,
+          "endPos": 51
+        }
+      ]
+    },
+    {
+      "text": "whats the weather last month in manila",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 18,
+          "endPos": 27
+        },
+        {
+          "entity": "CityName",
+          "startPos": 32,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "whats the weather last week in manila",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 18,
+          "endPos": 26
+        },
+        {
+          "entity": "CityName",
+          "startPos": 31,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "whats the weather like in dubai one year ago",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 26,
+          "endPos": 30
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 32,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "whats the weather next month in paris",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 18,
+          "endPos": 27
+        },
+        {
+          "entity": "CityName",
+          "startPos": 32,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "whats the weather paris in the next three weeks",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "CityName",
+          "startPos": 27,
+          "endPos": 29
+        },
+        {
+          "entity": "DateCalendar",
+          "startPos": 31,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "whats the weather today in batangas",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 18,
+          "endPos": 22
+        },
+        {
+          "entity": "CityName",
+          "startPos": 27,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "what's the weather today in hongkong?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 19,
+          "endPos": 23
+        },
+        {
+          "entity": "CityName",
+          "startPos": 28,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "what's the weather today in manila?",
+      "intent": "WeatherInCity",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 19,
+          "endPos": 23
+        },
+        {
+          "entity": "CityName",
+          "startPos": 28,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "yesterday what is the weather in dubai?",
+      "intent": "WeatherInCityWithDate",
+      "entities": [
+        {
+          "entity": "DateCalendar",
+          "startPos": 0,
+          "endPos": 8
+        },
+        {
+          "entity": "CityName",
+          "startPos": 33,
+          "endPos": 37
+        }
+      ]
+    }
+  ],
+  "settings": []
+}
